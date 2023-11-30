@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/viev"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="26dp"/>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/knopka"
+        android:layout_width="242dp"
+        android:layout_height="62dp"
+        android:backgroundTint="@color/green"
+        app:strokeColor="@color/black"
+        app:cardCornerRadius="26dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WhatsApp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"/>
+    </com.google.android.material.card.MaterialCardView>
+        <EditText
+            android:id="@+id/texs_two"
+            android:layout_width="242dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:hint="Введите текст"
+            android:textColor="@color/grey"/>
+</LinearLayout>
